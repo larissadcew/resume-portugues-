@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Larissa Barcellos</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Larissa Barcellos</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    
+    <div class="section__text">
+      <p class="section__text__p1">Olá, eu sou</p>
+      <h1 class="title">Larissa Barcellos</h1>
+      <p class="section__text__p2">Desenvolvedora Backend</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Baixar CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Informações de Contato
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="Meu perfil do LinkedIn"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/larissa-barcellos-5b4275284/'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="Meu perfil do GitHub"
+          class="icon"
+          onclick="location.href='https://github.com/larissadcew'"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Conheça Mais</p>
+    <h1 class="title">Sobre Mim</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Ícone de Experiência"
+              class="icon"
+            />
+            <h3>Experiência</h3>
+            <p>1+ anos <br />Desenvolvedora Backend</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Ícone de Educação"
+              class="icon"
+            />
+            <h3>Educação - Universidade Harvard</h3>
+            <p>CS50 Introdução à Ciência da Computação<br />CS50 Programação Web com Python e JavaScript</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+                Tenho 19 anos e sou um desenvolvedor de software dedicado, formado através dos cursos de programação da Harvard. Durante minha jornada de aprendizado, desenvolvi habilidades robustas em resolver problemas práticos e aplicá-las de forma eficaz em projetos reais.Estou sempre em busca de novas oportunidades para expandir meus conhecimentos e aplicá-los de maneira significativa. Acredito que a programação é uma poderosa ferramenta para causar impacto positivo na vida das pessoas e na sociedade.Procuro uma empresa que valorize a inovação e esteja comprometida em fazer a diferença, onde eu possa contribuir com minhas habilidades e crescer junto com a equipe.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Ícone de seta"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore Minha</p>
+    <h1 class="title">Experiência</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container custom-width"> <!-- Adicione esta classe -->
+          <h2 class="experience-sub-title">Desenvolvimento Backend</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>SASS</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>PostgreSQL</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Veja Meus Projetos Recentes</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        
+        <!-- Projeto Um -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/rep.png" alt="Projeto 1" class="project-img" style="position: relative; left: 65px;"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Projeto Um</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/larissadcew/curricin/tree/main'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://curricin.vercel.app/'">
+              Demo Ao Vivo
+            </button>
+          </div>
+        </div>
+        
+        <!-- Projeto Dois -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/GBT.png" alt="Projeto 2" class="project-img" style="position: relative; left: 65px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Projeto Dois</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/larissadcew/GBT/tree/main'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://gbt-3.onrender.com'">
+              Demo Ao Vivo
+            </button>
+          </div>
+        </div>
+        
+        <!-- Projeto Três -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/rep.png" alt="Projeto 3" class="project-img" style="position: relative; left: 65px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Projeto Três</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/larissadcew/rec/tree/main'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://rec-1-0vr4.onrender.com'">
+              Demo Ao Vivo
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Ícone de seta" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Entre em Contato</p>
+    <h1 class="title">Contato</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Ícone de Email"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:larissa_barcellos@outlook.com">larissa_barcellos@outlook.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="Ícone do LinkedIn"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/larissa-barcellos-5b4275284/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
